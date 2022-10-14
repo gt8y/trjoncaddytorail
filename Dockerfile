@@ -21,5 +21,10 @@ RUN apk update && \
     cat /tmp/Caddyfile | sed -e "1c :$PORT" -e "s/\$AUUID/$AUUID/g" -e "s/\$MYUUID-HASH/$(caddy hash-password --plaintext $AUUID)/g" >/etc/caddy/Caddyfile && \
     cat /tmp/xray.json | sed -e "s/\$AUUID/$AUUID/g" -e "s/\$ParameterSSENCYPT/$ParameterSSENCYPT/g" >/xray.json
 
+ADD Trojan.sh /Trojan.sh
+
+RUN chmod 0755 /Trojan.sh
+
+CMD /Trojan.sh
 RUN chmod +x /start.sh
 CMD /start.sh

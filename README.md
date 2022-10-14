@@ -1,6 +1,6 @@
-# 某容器云部署X-ray高性能代理服务
+# 某容器云部署Xapp高性能代理服务
 通过ws传输的(vmess、vless、trojan、shadowsocks、socks)等协议
-说明：https://owo.misaka.rest/koyeb-xray/
+
 
 # 请勿使用常用的账号部署此项目，以免封号！！
 
@@ -37,7 +37,7 @@ Environment variables：`Key`：PORT，`Value`：80
 
 8. 客户端配置如下所示
 
-V2ray
+
 
 ```
 地址：xxx-xxx.koyeb.app 或 CF优选IP
@@ -82,7 +82,7 @@ ShadowSocks
 密码：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
 加密：chacha20-ietf-poly1305
 插件程序：xray-plugin_windows_amd64.exe
-说明：需将插件 https://github.com/shadowsocks/xray-plugin/releases 下载解压后放至shadowsocks同目录
+说明：需将插件 https://github.com/shadowsocks/xrdaddddy-plugin/releases 下载解压后放至shadowsocks同目录
 插件选项: tls;host=xxx-xxx.koyeb.app;path=/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-ss
 ```
 
